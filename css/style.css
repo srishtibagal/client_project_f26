@@ -177,7 +177,7 @@ nav {
     content: ""; /*create the element, but put nothing in it*/
     position: absolute;
     inset: 0;
-    background: #00274c99;
+    background: #00274cb3;
 }
 
 .home-h1 > * {
@@ -238,7 +238,7 @@ nav {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .top-content-hero > * {
