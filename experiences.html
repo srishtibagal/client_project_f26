@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigating Your Experience</title>
+  <meta charset="UTF-8">
+  
+  <!--fonts: montserrat, barlow cond, and atkinson-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--stylesheets-->
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/starter_style.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engaged Learning Resources | UMSI</title>
+
 </head>
 <body>
     <header>
-  <a href = "#main">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
+        <div class="skip"><a href = "#main">Skip to Main Content</a></div>
+        <nav aria-label="Main">
+        <div class="umsi-logo">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </div>
+
+        <details class="menu">
+          <summary>
+            <p>
+              Menu
+            </p>
+          </summary>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "prep.html">Preparing for Your Experience</a></li>
-                <li><a href = "experiences.html">Navigating Your Experience</a></li>
-                <li><a href = "ending.html">Completing Your Experience</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="prep.html">Preparing for Your Experience</a></li>
+              <li><a href="experiences.html">Navigating Your Experience</a></li>
+              <li><a href="ending.html">Completing Your Experience</a></li>
             </ul>
-        </nav>
-    <h1>Navigating Your Experience</h1>
+        </details>
+      </nav>
+    <div class="exp-hero">
+        <h1>Navigating Your Experience</h1>
+    </div>
 
     </header>
-    <main id="main">
+    <main class="container" id="main">
     <section>
-        <img src="images/UMSI_DesignJam_GreatLakesWaterSafety_05.jpg" alt="Student organizing ideas on glass with sticky notes">
+        <!-- <img src="images/UMSI_DesignJam_GreatLakesWaterSafety_05.jpg" alt="Student organizing ideas on glass with sticky notes"> -->
         <h2>
           Launching & Executing Your Engaged Learning Project  
         </h2>
@@ -31,13 +54,13 @@
         </p>
     </section>
     <section>
-        <article>
+        <article class="normal-style">
             <h2>
                 The Value of Early Alignment & Active Execution
             </h2>
             <p>
-                First impressions shape the trajectory of a partnership. The starting phase turns abstract project ideas into structured, professional commitments. By establishing clear team contracts, co-creating agendas, and aligning on project scope early, you build psychological safety within your team and trust with your client.<br>
-                As you transition into active execution, real growth happens where challenges surface. Real-world projects rarely follow a straight line—requirements shift, team dynamics evolve, clients face unexpected internal constraints, and research data yields surprising results.<br>
+                First impressions shape the trajectory of a partnership. The starting phase turns abstract project ideas into structured, professional commitments. By establishing clear team contracts, co-creating agendas, and aligning on project scope early, you build psychological safety within your team and trust with your client.<br><br>
+                As you transition into active execution, real growth happens where challenges surface. Real-world projects rarely follow a straight line—requirements shift, team dynamics evolve, clients face unexpected internal constraints, and research data yields surprising results.<br><br>
                 Developing resilience, adaptability, and ethical agility through these stages is what distinguishes top UMSI graduates. Learning to navigate early ambiguity, manage scope creep, incorporate mid-project feedback, and realign technical decisions with human needs equips you with the strategic problem-solving capabilities required for modern information careers.
             </p>
         </article>
@@ -46,14 +69,14 @@
         <h2>
             Phased Focus & Core Objectives
         </h2>
-        <article>
+        <article class="styled-list-container">
             <h3>
                 Phase 2: Starting the Experience
             </h3>
             <p>
                 Establishing professional communication, conducting initial meetings, and finalizing partnership agreements.
             </p>
-            <ul>
+            <ul class="styled-list">
                 <li>
                     <strong>Communication:</strong>  Draft clear, professional outreach to launch working relationships.
                 </li>
@@ -65,14 +88,14 @@
                 </li>
             </ul>
         </article>
-        <article>
+        <article class="styled-list-container">
             <h3>
                 Phase 3: Managing & Executing in the Field
             </h3>
             <p>
                 Conducting research, tracking progress, and maintaining clear communication with project sponsors.
             </p>
-            <ul>
+            <ul class="styled-list">
                 <li>
                     <strong>Fieldwork & Research Methods:</strong> Apply human-centered design tools to observe contexts and extract insights.
                 </li>
@@ -86,35 +109,69 @@
         </article>
     </section>
     <section>
-        <h2>
+        <div class="exp-resources">
+            <h2>
             Featured Resources & Handouts
-        </h2>
-        <ul>
-            <li>
-                <a href="https://docs.google.com/document/d/1fWFXwoW5fKX_Tctn97Gio5XZDwILNlqIOyKKE8Yk5J0/edit?usp=drive_link">Initial Client Email Examples</a>: Plug-and-play email templates for first contact with clients and partners.
-            </li>
-            <li>
-                <a href="https://docs.google.com/document/d/1ItXxYauAcPoaGMUZWuJsX-OLFfGmeBOWT7JNhoZxGyU/edit?usp=drive_link">Initial Client Meeting Sample Agenda</a>: Step-by-step structure for running a professional kickoff call.
-            </li>
-            <li>
-                <a href="https://ginsberg.umich.edu/article/campus-community-partnerships-toolkit">Ginsberg Center Student-Client Partnership Toolkit</a>: Principles for building reciprocal, respectful community relationships.
-            </li>
-            <li>
-                <a href="https://drive.google.com/file/d/12ealxkKCvOZajxK7doyUXu_k2LyKPUP2/view?usp=drive_link">Student-Client Partnership Guide</a>: Standard guidelines for managing expectations and deliverables.
-            </li>
-            <li>
-                <a href="https://docs.google.com/document/d/1y5Y2wc1ADz0n_ht26kPYlFK3Zm9i3UR_Z0OMWP3Q_xQ/edit?usp=drive_link">Student Org-ELO Partnership Agreement Template</a>: Formal contract establishing roles between student teams and ELO.
-            </li>
-            <li>
-                <a href="https://docs.google.com/spreadsheets/d/1YeK2WerSbhaU5hjEg9wxdXmzBx9lgRy2yHBKAH-SxiA/edit?gid=166831640#gid=166831640">SO-ELL Schedule</a>: Overview of key milestones, deadlines, and submission dates.
-            </li>
-        </ul>
+            </h2>
+        </div>
+        <div class="link-list">
+            <article>
+                <h3>
+                    <a href="https://docs.google.com/document/d/1fWFXwoW5fKX_Tctn97Gio5XZDwILNlqIOyKKE8Yk5J0/edit?usp=drive_link">Initial Client Email Examples</a>
+                </h3>
+                <p>
+                    Plug-and-play email templates for first contact with clients and partners.
+                </p>
+            </article>
+            <article>
+                <h3>
+                    <a href="https://docs.google.com/document/d/1ItXxYauAcPoaGMUZWuJsX-OLFfGmeBOWT7JNhoZxGyU/edit?usp=drive_link">Initial Client Meeting Sample Agenda</a>
+                </h3>
+                <p>
+                    Step-by-step structure for running a professional kickoff call.
+                </p>
+            </article>
+            <article>
+                <h3>
+                    <a href="https://ginsberg.umich.edu/article/campus-community-partnerships-toolkit">Ginsberg Center Student-Client Partnership Toolkit</a>
+                </h3> 
+                <p>
+                    Principles for building reciprocal, respectful community relationships.
+                </p>
+            </article>
+            <article>
+                <h3>
+                    <a href="https://drive.google.com/file/d/12ealxkKCvOZajxK7doyUXu_k2LyKPUP2/view?usp=drive_link">Student-Client Partnership Guide</a>
+                </h3>
+                <p>
+                    Standard guidelines for managing expectations and deliverables.
+                </p>
+            </article>
+            <article>
+                <h3>
+                    <a href="https://docs.google.com/document/d/1y5Y2wc1ADz0n_ht26kPYlFK3Zm9i3UR_Z0OMWP3Q_xQ/edit?usp=drive_link">Student Org-ELO Partnership Agreement Template</a>
+                </h3>
+                <p>
+                    Formal contract establishing roles between student teams and ELO.
+                </p>
+            </article>
+            <article>
+                <h3>
+                    <a href="https://docs.google.com/spreadsheets/d/1YeK2WerSbhaU5hjEg9wxdXmzBx9lgRy2yHBKAH-SxiA/edit?gid=166831640#gid=166831640">SO-ELL Schedule</a>
+                </h3>
+                <p>
+                    Overview of key milestones, deadlines, and submission dates.
+                </p>
+            </article>
+        </div>
     </section>
     <section>
-        <img src="images/UMSI_ViewbookMSI2026_01.jpg" alt="Students sitting on the steps at the Leinweber building">
-        <h2>
+        <!-- <img src="images/UMSI_ViewbookMSI2026_01.jpg" alt="Students sitting on the steps at the Leinweber building"> -->
+        <div class="banner-image link-list-top">
+            <h2>
             More Resources
-        </h2>
+            </h2>
+        </div>
         <table>
             <caption>
                 Types of resources and their purpose
@@ -209,7 +266,9 @@
             </tbody>
         </table>
     </section>
-    <p><strong>Are you approaching the finish line? <a href="ending.html">Head to the Wrap-up Phase!</a></strong></p>
+    <div class="boxed-content">
+        <p><strong>Are you approaching the finish line? <a href="ending.html">Head to the Wrap-up Phase!</a></strong></p>
+    </div>
     </main>
     <footer>
         <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>

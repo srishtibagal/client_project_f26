@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Completing Your Experience</title>
+  <meta charset="UTF-8">
+  
+  <!--fonts: montserrat, barlow cond, and atkinson-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--stylesheets-->
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/starter_style.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engaged Learning Resources | UMSI</title>
+
 </head>
 <body>
     <header>
-    <a href = "#main">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
+    <div class="skip"><a href = "#main">Skip to Main Content</a></div>
+      <nav aria-label="Main">
+        <div class="umsi-logo">
+          <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </div>
+
+        <details class="menu">
+          <summary>
+            <p>
+              Menu
+            </p>
+          </summary>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "prep.html">Preparing for Your Experience</a></li>
-                <li><a href = "experiences.html">Navigating Your Experience</a></li>
-                <li><a href = "ending.html">Completing Your Experience</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="prep.html">Preparing for Your Experience</a></li>
+              <li><a href="experiences.html">Navigating Your Experience</a></li>
+              <li><a href="ending.html">Completing Your Experience</a></li>
             </ul>
-        </nav>
-    <h1>Completing, Reflecting, and Translating Your Impact</h1>
-    </header>
-    
-    <main id="main">
-        <img src="images/UMSI__CIDEXPODearborn_042023_13.jpg" alt="A professor critiquing a project to students at an expo">
+        </details>
+      </nav>
+    <div class="end-hero">
+        <h1>Completing, Reflecting, and Translating Your Impact</h1>
         <p>
             Close your project responsibly, evaluate your outcomes, and articulate your real-world experience for your future career.
         </p>
+    </div>
+    </header>
+    
+    <main class="container" id="main">
+        <!-- <img src="images/UMSI__CIDEXPODearborn_042023_13.jpg" alt="A professor critiquing a project to students at an expo"> -->
+        
         <section>
             <h2>
                 The Power of Closing Well and Reflecting Deeply
             </h2>
             <p>
-                A project is not complete simply because the final deliverable has been handed over. The final stages—closing, reflecting, and translating—are what transform a transient project into <strong>lasting organizational value and personal career momentum.</strong> 
+                A project is not complete simply because the final deliverable has been handed over. The final stages—closing, reflecting, and translating—are what transform a transient project into <strong>lasting organizational value and personal career momentum.</strong><br>
             </p>
-            <p>
+            <p class="normal-style">
                 Responsible handoffs ensure that partners are not left with abandoned tools or undocumented systems they cannot maintain. Simultaneously, structured reflection forces you to pause and ask: <em>What did I learn about my technical skills, my teamwork style, and the ethical impact of my work?</em> Without reflection, experience is just something that happened to you; with reflection, experience becomes expertise. Learning to translate complex, messy project narratives into clear resume bullets and portfolio case studies is what turns your UMSI education into your greatest professional asset.
             </p>
         </section>
         <section>
             <article>
-                <img src="images/UMSI_Detroit_CUTgroup_06.jpg" alt="Designers and stakeholders talking at a table">
-                <h2>
+                <!-- <img src="images/UMSI_Detroit_CUTgroup_06.jpg" alt="Designers and stakeholders talking at a table"> -->
+                <div class="banner-image offboarding-banner">
+                    <h2>
                     Ending the Experience - Responsible Offboarding & Handoff
-                </h2>
-                <p>
+                    </h2>
+                </div>
+                <p class="normal-style">
                     Responsible offboarding is an ethical mandate in engaged learning. Delivering high-quality technical assets is only half the job—ensuring the community partner or client can independently maintain, update, and benefit from your work long after the semester ends is what defines a successful project.
                 </p>
-                <h3>
-                    Focus and Objectives
-                </h3>
-                <ul>
+                <div class="styled-list-container">
+                    <h3>
+                        Focus and Objectives
+                    </h3>
+                <ul class="styled-list">
                     <li>
                         <strong>Completing & Transitioning Work:</strong> Package code, design files, reports, and technical assets into accessible, usable formats for your partner.
                     </li>
@@ -59,23 +86,41 @@
                         <strong>Evaluating Impact:</strong> Measure project outcomes against initial scoping goals and gather client feedback.
                     </li>
                 </ul>
+                </div>
             </article>
-            <article>
+        </section>
+        <section>
+            <div class="banner-image link-list-top">
                 <h3>
-                    Featured Resources & Handouts
+                Featured Resources & Handouts
                 </h3>
-                <ul>
-                    <li>
-                        <a href="https://docs.google.com/document/d/1-gfg_EZ3T8pa3T0a130Qvtpl1bYoLOVEHSNpGHcJtFA/edit?usp=drive_link">Exiting a Community-Engaged Project Worksheet</a>: Guided template for responsible project transition, asset delivery, and offboarding.
-                    </li>
-                    <li>
-                        <a href="https://docs.google.com/document/d/1TrEDolwmOIlXgYgAP9VvlOGoYOwFfe6KxzZOgZSVYVw/edit?usp=drive_link">Project Scoping Handout & Terms</a> (Final Review): Re-evaluate final deliverables against original project commitments.
-                    </li>
-                    <li>
-                        <a href="https://ginsberg.umich.edu/article/campus-community-partnerships-toolkit">Ginsberg Center Student-Client Partnership Toolkit</a> (Closing Section): Best practices for respectful closure with community organizations.
-                    </li>
-                </ul>
-            </article>
+            </div>
+            <div class="link-list">
+                <article>
+                    <h3>
+                        <a href="https://docs.google.com/document/d/1-gfg_EZ3T8pa3T0a130Qvtpl1bYoLOVEHSNpGHcJtFA/edit?usp=drive_link">Exiting a Community-Engaged Project Worksheet</a>
+                    </h3>
+                    <p>
+                        Guided template for responsible project transition, asset delivery, and offboarding.
+                    </p>
+                </article>
+                <article>
+                    <h3>
+                        <a href="https://docs.google.com/document/d/1TrEDolwmOIlXgYgAP9VvlOGoYOwFfe6KxzZOgZSVYVw/edit?usp=drive_link">Project Scoping Handout & Terms</a>
+                    </h3>
+                    <p>
+                        (Final Review): Re-evaluate final deliverables against original project commitments.
+                    </p> 
+                </article>
+                <article>
+                    <h3>
+                        <a href="https://ginsberg.umich.edu/article/campus-community-partnerships-toolkit">Ginsberg Center Student-Client Partnership Toolkit</a>
+                    </h3> 
+                    <p>
+                        (Closing Section): Best practices for respectful closure with community organizations.
+                    </p>
+                </article>
+            </div>
         </section>
     </main>
     

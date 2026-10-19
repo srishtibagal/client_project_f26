@@ -1,0 +1,627 @@
+
+
+h1, h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+}
+
+h3, h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+h1{
+    font-size:48px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+h2{
+    font-size: 32px;
+    line-height:1.2;
+    margin-bottom: 8px;
+}
+
+h3{
+    font-size: 22px;
+    font-weight:700;
+    line-height: 1.2;
+    margin-bottom:8px;
+}
+
+p, li, a {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+li strong{
+    font-size:20px;
+    font-weight: 600;
+}
+
+/* body{
+    margin:32px;
+} */
+
+/* normal style paragraphs */
+.normal-style{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.normal-style h3 {
+    margin-top: 24px;
+}
+
+.normal-style-list{
+    margin-bottom: 24px;
+    padding: 0 24px 0 24px;
+}
+
+ol.normal-style-list{
+    margin-top: 24px;
+}
+
+.styled-list li{
+    list-style:none;
+    background-color:#ffcb05;
+    margin: 8px 0 8px 0;
+    padding: 8px;
+}
+
+.styled-list strong{
+    color:#00274c;
+}
+
+.styled-list-container{
+    border:#00274c solid 1px;
+    padding: 8px 12px;
+    margin-bottom: 24px;
+}
+
+.styled-list-container h3{
+    color:#00274c;
+}
+
+.skip a{
+    background-color:#ffcb05;
+     position:fixed;
+     top: -65px;
+}
+
+.skip a:focus{
+     top: 25px;
+     z-index: 1;
+}
+
+img{
+     width: 100%;       
+     height: 100%;
+     /* object-fit: cover; */
+}
+
+.umsi-logo{
+    min-width:30px;
+    max-width: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    position: relative;  
+    background-color: white;
+    min-height: 80px;
+    padding: 0 24px;
+}
+
+.menu summary {
+    list-style: none;
+    cursor: pointer;
+    background-color:#ffcb05;
+    padding: 8px 12px;
+    font-weight: 600;
+}
+
+.menu summary:hover, .menu summary:focus{
+    color:white;
+    background-color: #00274c;
+}
+
+.menu ul {
+    position: absolute;
+    top: 100%;                        /* drops down right under the nav bar */
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #ffcb05;
+    list-style: none;
+    margin: 0;
+    padding: 8px 20px 16px;
+}
+
+.menu a {
+    display: block;
+    padding: 12px 0;             
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus {
+    font-weight: bold;
+    color: #00274c;
+}
+
+/* home page styles */
+
+.home-h1{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: #ffcb05;
+    min-height: 300px;                /* Parallax effect */
+    background-image: url("../images/MCOMMONS-Q3-1002644.jpg");
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 24px;
+}
+
+.home-h1::before {
+    content: ""; /*create the element, but put nothing in it*/
+    position: absolute;
+    inset: 0;
+    background: #00274c99;
+}
+
+.home-h1 > * {
+    position: relative; 
+}
+
+.video-section{
+    margin-bottom: 24px;
+}
+
+.video-info{
+    margin-bottom: 12px;
+}
+
+.video iframe {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  aspect-ratio: 16 / 9;
+}
+
+.container{
+    /* display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    gap: 12px;
+    padding:24px;
+}
+
+.banner-image, .top-content-hero, .steps-intro{
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+/* making every container span all columns for peace of mind */
+/* .container > *{
+    grid-column: 1/-1;
+} */
+
+/* home hero parallax banner */
+.top-content-hero{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    min-height: 150px;                /* Parallax effect */
+    background-image: url("../images/UMSI_CampusFall_UMSIBackpack_02.jpg");
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 24px;
+}
+
+.top-content-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.top-content-hero > * {
+    position: relative; 
+}
+
+/* prep hero parallax banner */
+.prep-hero{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    min-height: 300px;                /* Parallax effect */
+    background-image: url("../images/UMSI_ViewbookMSI2026_14.jpg");
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 24px;
+}
+
+.prep-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.prep-hero > *{
+    position: relative; 
+}
+
+/* experiences hero parallax banner */
+.exp-hero{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    min-height: 300px;                /* Parallax effect */
+    background-image: url("../images/UMSI_DesignJam_GreatLakesWaterSafety_05.jpg");
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 24px;
+}
+
+.exp-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.exp-hero > *{
+    position: relative; 
+}
+
+/* ending hero parallax banner */
+.end-hero{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    min-height: 300px;                /* Parallax effect */
+    background-image: url("../images/UMSI__CIDEXPODearborn_042023_13.jpg");
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 24px;
+}
+
+.end-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.end-hero > *{
+    position: relative; 
+}
+
+/* home page non-parallax image banner */
+.link-list-top{
+    /* background-attachment: fixed; Parallax effect      */
+    background-position: center;  /* Parallax effect*/
+    background-repeat: no-repeat; /*Parallax effect*/
+    background-size: cover;      /* Parallax effect*/
+    color: white;
+    min-height: 150px;                /* Parallax effect */
+    background-image: url("../images/UMSI_ASB2026CIRCAPintig_41.jpg");
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 24px;
+}
+
+.link-list-top::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.link-list-top > * {
+    position: relative; 
+}
+
+/* prep page non-parallax image banner */
+.phase1-top{
+    /* background-attachment: fixed; Parallax effect      */
+    background-position: center;  /* Parallax effect*/
+    background-repeat: no-repeat; /*Parallax effect*/
+    background-size: cover;      /* Parallax effect*/
+    color: white;
+    min-height: 150px;                /* Parallax effect */
+    background-image: url("../images/UMSI_DesignJam_02142022_01.jpg");
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 24px;
+}
+
+.phase1-top::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.phase1-top > * {
+    position: relative; 
+}
+
+/* prep page non-parallax image banner 2 */
+.process-top{
+    /* background-attachment: fixed; Parallax effect      */
+    background-position: center;  /* Parallax effect*/
+    background-repeat: no-repeat; /*Parallax effect*/
+    background-size: cover;      /* Parallax effect*/
+    color: white;
+    min-height: 150px;                /* Parallax effect */
+    background-image: url("../images/UMSI_DesignJam_02142022_01.jpg");
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 24px;
+}
+
+.process-top::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.process-top > * {
+    position: relative; 
+}
+
+/* experiences page non-parallax image banner */
+.exp-resources{
+    /* background-attachment: fixed; Parallax effect      */
+    background-position: center;  /* Parallax effect*/
+    background-repeat: no-repeat; /*Parallax effect*/
+    background-size: cover;      /* Parallax effect*/
+    color: white;
+    min-height: 150px;                /* Parallax effect */
+    background-image: url("../images/UMSI_ViewbookMSI2026_01.jpg");
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 24px;
+}
+
+.exp-resources::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.exp-resources > * {
+    position: relative; 
+}
+
+/* ending page non-parallax image banner */
+.offboarding-banner{
+    /* background-attachment: fixed; Parallax effect      */
+    background-position: center;  /* Parallax effect*/
+    background-repeat: no-repeat; /*Parallax effect*/
+    background-size: cover;      /* Parallax effect*/
+    color: white;
+    min-height: 150px;                /* Parallax effect */
+    background-image: url("../images/UMSI_Detroit_CUTgroup_06.jpg");
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 24px;
+}
+
+.offboarding-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.offboarding-banner > * {
+    position: relative; 
+}
+
+.grid-list{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    gap: 12px;
+    padding: 24px 0;
+}
+
+.grid-list li{
+    padding:12px;
+    background-color: #ffcb05;
+}
+
+.steps-intro{
+    background-color: #2f65a7;
+    color: white;
+    padding: 24px;
+}
+
+.steps-intro li{
+    margin-top: 12px;
+    list-style: none;
+}
+
+.grid-image{
+  padding: 12px 0 0 0;
+}
+
+.step-info{
+    /* background-color: #f5f2ea; */
+    padding: 12px 12px 24px 12px;
+    margin-bottom: 12px;
+    margin-top:-4px;
+    border:#00274c solid 1px;
+}
+
+.step-info p{
+    margin-bottom: 24px;
+}
+
+.step-info a{
+    font-weight: 600;
+    background-color:#2f65a7;
+    padding: 12px;
+    color:white;
+    text-decoration: none;
+}
+
+.step-info a:hover, .step-info a:focus{
+    background-color:#00274c;
+}
+
+.link-list{
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.link-list > *{
+    /* display: grid;
+    grid-template-columns: minmax(120px, 1fr) 2fr; */
+    align-items: stretch;
+    margin-bottom: 24px;
+    gap: 12px;
+}
+
+.link-list h3 {
+  margin: 8px 0;
+  display: flex;  /* lets the link grow to fill the h3 */
+  gap: 12px;        
+}
+
+.link-list h3 a {
+  flex: 1;                /* fills the whole h3, and so the whole grid cell */
+  display: flex;
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
+  text-align: center;
+  padding: 12px;
+  background-color: #00274c;
+  color: white;
+  text-decoration: none;
+}
+
+.link-list h3 a:hover, .link-list h3 a:focus {
+  background-color: #ffcb05;
+  color: #00274c;
+}
+
+table{
+    border: #2f65a7 1px solid;
+    font-family: "Atkinson Hyperlegible Next", sans-serif;
+}
+
+table caption{
+    padding: 12px;
+}
+
+thead{
+    background-color:#ffcb05;
+}
+
+td{
+    padding: 8px;
+    border: #00274c solid 1px;
+    background-color:aliceblue;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+th{
+    padding: 12px;
+}
+
+.about{
+    background-color:#2f65a7;
+    color: white;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.boxed-content{
+    background-color: #00274c;
+    color: white;
+    padding: 12px;
+    margin-top: 24px;
+}
+
+.boxed-content a{
+    color:#ffcb05;
+}
+
+.boxed-content a:hover, .boxed-content a:focus{
+    color: white;
+}
+
+footer{
+    background-color:#00274c;
+    color: white;
+    padding: 24px;
+}
+
+footer a{
+    color:#ffcb05
+}
+
+footer a:hover, footer a:focus{
+    color: white;
+}
